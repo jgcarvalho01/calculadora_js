@@ -28,22 +28,24 @@
             <span class="num" onclick="view('0')" value="0"><i>0</i></span>
             <span class="num" onclick="view('00')" value="00"><i>00</i></span>
             <span class="num" onclick="view('.')" value="."><i>.</i></span>
-            <span class="num equals" onclick="view('=')" value="="><i>=</i></span>
+            <span class="num equals" onclick="compute()" value="="><i>=</i></span>
 
         </form>
     </div>
     <script>
+
         function view(num){
             document.getElementById('result').value+=num;
         }
         function compute(){
             let a=document.getElementById('result').value;
             b=eval(a)
-            document.getElementById('result').value+=b;
+            document.getElementById('result').value=b;
         }
         function clears(){
             document.getElementById('result').value=""
         }
+
     </script>
 
 </body>
