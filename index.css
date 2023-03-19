@@ -97,12 +97,13 @@ span.plus{
     grid-row: span 2;
     height: 170px;
 }
-span.equal{
+span.equals{
     background: #2196f3;
 }
-span.equal::before{
-    background-color: linear-gradient(90deg,#d20000,#ffffff56);
+span.equals::before{
+    background: linear-gradient(90deg,#1479c9,#ffffff56);
     border-left: 1px solid #fff4;
     border-top: 1px #fff9;
     border-bottom: 1px solid #fff4;
 }
+
